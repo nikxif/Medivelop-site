@@ -1,13 +1,13 @@
 ---
-title: Jekyll Serif Theme
+title: Medivelop | Welcome
 layout: home
-description: Jekyll Serif contains content types for a typical business website. The theme is fully responsive, blazing fast and artfully illustrated.
+description: Medivelop helps young people reach their full potential.
 intro_image: "images/illustrations/pointing.svg"
 intro_image_absolute: true
 intro_image_hide_on_mobile: true
 show_call_box: true
 ---
 
-# Serif - A Jekyll Business Theme.
+# Medivelop - Getting to know more.
 
-Serif contains content types for a typical business website. The theme is fully responsive, blazing fast and artfully illustrated.
+With years of experience in getting young voices heard, Medivelop creates opportunities for youth to reach their full potential.
