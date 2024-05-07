@@ -1,0 +1,57 @@
+// .event-summary {
+//   background-color: $white-offset; 
+//   padding: 20px;
+//   margin-bottom: 20px;  /* Adds space between each event */
+//   border-radius: 3px;
+//   display: flex;
+//   align-items: center; /* Aligns items vertically */
+
+//   .event-image {
+//     height: 108px;  /* Fixed height */
+//     width: 192px;   /* Fixed width */
+//     margin-right: 5px;
+//     border-radius: 3px;
+//     overflow: hidden; /* Ensures the image does not spill out of the container */
+
+//     img {
+//       height: 108px;
+//       width: 192px;
+//       object-fit: cover; /* Ensures the image covers the area without distorting ratio */
+//     }
+//   }
+// }
+
+.event-summary {
+  display: flex;
+  background-color: $white-offset; // Example light pink background
+  padding: 15px;
+  border-radius: 10px;
+  align-items: center; // Ensures vertical center alignment of content
+
+  .event-image {
+      // flex-shrink: 0; // Prevents the image from shrinking
+      width: 200px; // Set fixed width
+      height: 150px; // Set fixed height
+      margin-right: 20px; // Reduces margin between image and text
+      overflow: hidden;
+      img {
+          height: 100%;
+          width: 100%;
+          object-fit: cover; // Ensures the image covers the area without distortion
+      }
+  }
+
+  .event-content {
+      flex: 1; // Takes up the remaining space
+      h3 {
+          margin-top: 0;
+          margin-bottom: 5px;
+      }
+      p {
+          margin-bottom: 5px;
+          &:last-child {
+              margin-bottom: 0;
+          }
+      }
+  }
+}

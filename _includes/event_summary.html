@@ -1,0 +1,29 @@
+<div class="col-12 col-md-10 mb-3">
+  <div class="event event-summary d-flex">
+    <div class="event-image">
+      <!-- {% picture event.image alt=event.title %} -->
+
+      <img src="{{ event.image | relative_url }}" alt="{{ event.title }} image">
+    </div>
+    <div class="event-content">
+      <h3 class="event-title">
+        <a href="{{ event.url | relative_url }}">{{ event.title }}</a>
+      </h3>
+      <p class="event-date">
+        {{ event.date | date: "%B %d, %Y" }}
+        {% assign time_part = event.date | date: '%H:%M' %}
+        {% if time_part != '00:00' %}
+          at {{ time_part }}
+        {% endif %}
+        {% assign time_zone_part = event.date | split: 'T' %}
+        {% if time_zone_part.size > 1 %}
+          {% assign time_zone = time_zone_part.last | split: '+' %}
+          {% if time_zone.size > 1 %}
+            ({{ time_zone.last }})
+          {% endif %}
+        {% endif %}
+      </p>
+      <p>{{ event.description | markdownify | strip_html | truncate: 150 }}</p>
+    </div>
+  </div>
+</div>

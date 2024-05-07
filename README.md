@@ -1,3 +1,8 @@
+# DOCUMENTATION
+
+1. The events go into the _events folder, following the template that is set there (TODO: make a template file for the events so that we don't mess up)
+2. 
+
 # Jekyll Serif Theme
 
 Serif is a modern business theme for Jekyll. It contains multiple content types for a typical brochure/marketing website. The theme is fully responsive, blazing fast and artfully illustrated.
